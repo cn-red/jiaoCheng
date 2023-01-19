@@ -1,0 +1,86 @@
+* {
+  border: 1px solid rgb(8, 8, 8);
+}
+.baiSe {
+  background-color: #f1f1f1;
+}
+.huiSe {
+  background-color: rgb(255, 255, 255);
+}
+.yinYing {
+  box-shadow: 10px 10px 5px #888888;
+}
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;}
+body {
+  width: 90%;
+  margin: 2em auto;
+  font: 0.9/1.2 宋体, 微软雅黑;
+  padding: 10px;
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  grid-template-rows: auto;
+  gap: 8px;
+  grid-template-areas:
+    "zuo tou tou"
+    "zuo nei you";
+}
+.zuo {
+  grid-area: zuo;
+  max-height: 620px;
+}
+.tou {
+  grid-area: tou;
+  height: 60px;
+  z-index: 1;
+}
+.nei {
+  grid-area: nei;
+  display: flex;
+  flex-flow: column wrap;
+  gap: 10px;
+}
+.shu {
+  display: flex;
+  flex-wrap: row wrap;
+  gap: 8px;
+  
+}
+.shu > div {
+  flex: 1;
+  min-height: 100px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 10px 10px 5px #888888;
+
+  
+}
+.lie {
+  flex: 2;
+  gap: 10px;
+  
+}
+.lie > div {
+  flex: 1;
+  min-height: 160px;
+  margin-bottom: 8px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 10px 10px 5px #888888;
+  
+}
+.you {
+  grid-area: you;
+  display: flex;
+  flex-flow: column wrap;
+  gap: 8px;
+}
+
+.ti {
+  height: 200px;
+}
+.xiao {
+  height: 300px;
+}
